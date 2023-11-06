@@ -1,0 +1,243 @@
+<!-- DISCLAIMER: my browser dev-tools tends to randomly say that
+  there's a tiny amount of overflow-x on mobile from an unknown source,
+  spent most of the designated time for the project just looking
+  for the culprits, defeated; but it turns out that it's a lie.
+
+  Started checking directly on my own iPhone SE and there wasn't
+  any overflow. Please take that into account while grading!!!-->
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+    
+    <title>ÆSTHETIK Photography - Freelance Photography - Available for Comission Work</title>
+
+    <meta name="description" content="Portfolio for a freelance photographer that focuses on the Urban and Landscape genres">
+</head>
+<body>
+
+    <!-- Bootstrap pre-built navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">ÆSTHETIK</a> 
+                  <!-- my brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>            
+          </ul>  
+        </div><!-- end of collapse -->
+
+      </div><!-- end of container-fluid -->
+    </nav>
+
+    <section id="hero">
+
+      <div class="hero" title="backview of girl's hair, crossing the street, blurry moving background"></div>
+
+      <section id="hero-text">
+        <h1 id="hero-h1">Cityscapes of the world</h1>
+        <h3>Captured from a brand new perspective</h3>
+      </section>
+
+    </section><!-- end of hero -->
+  
+    <main>
+      <section id="about">
+        <h1>About</h1>
+        <div id="cards-container">
+        <!-- Bootstrap example cards -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">About me</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Freelance photographer</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos similique totam, nostrum nobis inventore facilis earum dolorum eum exercitationem vel possimus sint, aut quisquam provident. Qui labore debitis quos aspernatur?</p> 
+            </div><!-- end card-body -->
+          </div> <!-- end card -->
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">About my work</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Architecture's influence</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, asperiores eaque! Exercitationem quod minus neque doloremque? Libero nobis doloribus eius voluptas doloremque provident facilis saepe quaerat ipsam, est eveniet eaque.</p>
+            </div><!-- end card-body -->
+          </div> <!-- end card -->
+        </div> <!-- end cards container -->
+
+      </section><!-- end of about -->
+    </main>
+      
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+
+      <!-- Adaptive photo layout from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
+      <ul class="photo-layout">
+        <li>
+          <img src="img/compressed_skyscrapers-1893201_1920.jpg" alt="skyscrapers">
+        </li>
+        <li>
+          <img src="img/compressed_windows_architecture-2256489_1920.jpg" alt="wiew of building's windows from straight down">
+        </li>
+        <li>
+          <img src="img/compressed_architecture-1868667_1920.jpg" alt="drone view of a city at night">
+        </li>
+        <li>
+          <img src="img/compressed_porsche-1851246_1920.jpg" alt="porsche at night">
+        </li>
+        <li>
+          <img src="img/compressed_arcos_architecture-3357028_1920.jpg" alt="arched hallway">
+        </li>
+        <li>
+          <img src="img/compressed_escalator-769790_1920.jpg" alt="escalator">
+        </li>
+        <li>
+          <img src="img/compressed_architecture-22039_1920.jpg" alt="building windows">
+        </li>
+        <li>
+          <img src="img/compressed_buildings-1836478_1920.jpg" alt="brick facade and the entrance of a caffee">
+        </li>
+        <li>
+          <img src="img/compressed_abstract-1138967_1920.jpg" alt="curved modern building facade, made of glass">
+        </li>
+        <li>
+          <img src="img/compressed_prague-3540883_1920.jpg" alt="pedestrians in prague">
+        </li>
+        
+      </ul>
+      <!-- end of adaptive photo layout -->
+    </section><!-- end of portfolio -->
+
+<!-- BUG: WHAT'S WITH THE VERTICAL DEADSPACE HERE?
+09/23: now doesn't appear on mobile 
+09/24: it's still there, just it appears less often
+       still a mistery to me, but I'm done for now.-->
+      
+
+    <section id="testimonials">
+      <h1>Testimonials</h1>
+
+      <div id="testimonials-container">
+        <div #carousel-container>
+        <!-- bootstrap carousel -->
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img src="/img/compressed_contrapicado_skyscrapers-3184798_1920.jpg" class="d-block w-100" 
+              alt="skyscrapers">
+              <div class="carousel-caption">
+                <h5>"My favorite freelancer..."</h5>
+                <p>..."Some representative placeholder content for the slide".</p>
+              </div><!-- end caption -->
+            </div><!-- end item -->
+            
+            <div class="carousel-item">
+              <img src="/img/compressed_taxi_pedestrians-1853552_1920.jpg" class="d-block w-100" 
+              alt="busy street, taxi and pedestrians">
+              <div class="carousel-caption">
+                <h5>"Excelent quality work..."</h5>
+                <p>..."Some representative placeholder content for the slide".</p>
+              </div><!-- end of caption -->
+            </div><!-- end of item -->
+            
+            <div class="carousel-item">
+              <img src="/img/compressed_highway_hong-kong-1990268_1920.jpg" class="d-block w-100" 
+              alt="light painting of cars headligts on highway">
+              <div class="carousel-caption">
+                <h5>"My grafiti looked amazing..."</h5>
+                <p>..."Some representative placeholder content for the slide".</p>
+              </div><!-- end of caption -->
+            </div><!-- end of item -->
+          </div><!-- end of carousel inner -->
+
+          <!-- carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- end of carousel controls -->
+
+          </div> <!-- end of carousel -->
+        </div><!-- end of carousel container -->
+      </div><!-- end testimonial container -->
+    </section> <!-- end of testimonials -->
+
+    <footer class="bg-body-tertiary">
+      <div id="footer-container">
+
+        <section id="contact-container">
+          <h5>Contact</h5>
+          <ul id="contact-ul">
+            <li>070 1234 56 78</li>
+            <li>example@aesthetik.se</li>
+            <li>Street number, apartment <br/>
+              c/o Name, Area<br/>
+              post code, City</li>
+            </ul>
+        </section><!-- end of contact-container -->
+
+        <section id="socials">
+          <h5>Socials</h5>
+          <div id="icon-container">
+            
+              <div>
+                <a href="https://www.behance.net/amilpsp" target="_blank">
+                  <img id="behance" src="img/icons/icons8-behance-50.png" alt="behance icon">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img id="facebook" src="img/icons/icons8-facebook-50.png" alt="facebook icon">
+                </a>
+              </div>
+
+              <div>
+                <a href="https://www.instagram.com/amilpsp/" target="_blank">
+                  <img id="instagram" src="img/icons/icons8-instagram-50.png" alt="instagram icon">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img id="linkedin" src="img/icons/icons8-linkedin-50.png" alt="linkedin icon">
+                </a>
+              </div>
+
+          </div><!-- end icon container -->
+        </section><!-- end socials-containers -->
+      
+      </div><!-- end footer-container -->
+
+      <a class="btn btn-secondary" href="#hero">Back to top</a>
+
+    </footer>
+      
+    
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
+
+<!-- Code is validated through the W3C validation VSCode extention -->

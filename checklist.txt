@@ -1,0 +1,13 @@
+Navbar ☑
+content
+Footer
+
+1 media query
+no overflow ☑
+no breaks
+
+****meta description
+****validerad
+****ALT / TITLE
+
+
