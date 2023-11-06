@@ -4,12 +4,14 @@ Lost access to the old CSS&HTML school project repo, building uppon that for the
 
 ## Project instructions (sumarized in Svengelska for now):
 
-### KRAV FÖR G
+### KRAV FÖR G | ideas
+---------------|-------
 
 1. Webbtjänst och Data:
    - **Hämta JSON-data**.
    - Hämta och visa minst tio värden från den valda webbtjänsten.
    - Meningsfull och användbar data.
+---------------------------------------------------------------------
 2. Webbplats Layout:
    - **Två sidor**, med navigationslänkar
 3. **Dynamisk Uppdatering.**
@@ -18,8 +20,8 @@ Lost access to the old CSS&HTML school project repo, building uppon that for the
    - Backticks `${}`
    - Conditons
    - Loops
-   - **_NODES: create or manipulate_**
-   - **_Storage_**
+   - **_NODES: create or manipulate_** |
+   - **_Storage_** |
 5. Webbläsardemonstration (5-10 minuter):
    - Demonstration av JSON-data via **_Insomnia_** eller liknande verktyg.
    - Presentation av JavaScript-koden som används för att hämta och visa data.
