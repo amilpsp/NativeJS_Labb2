@@ -1,5 +1,5 @@
 # NativeJS_Labb2
-
+Fictional website made for class!
 Lost access to the old CSS&HTML school project repo, building uppon that for the next lab
 
 ## Project instructions (sumarized in Svengelska for now):
