@@ -33,3 +33,14 @@ Lost access to the old CSS&HTML school project repo, building uppon that for the
 2. Web Storage
 3. Datavisualiseringsbibliotek
 4. Enhetsformaterad Kod (din JavaScript är enhetligt formaterad och följer kodningsstandarder)
+
+## Action plan:
+
+1. Fix the layout first. No listeners.
+2. Most basic listeners ("read more" buttons, individual picture preview)
+
+## Brain dump:
+
+- GET the pictures, instead of having them on the HTML
+- Displaying the pictures from my actual instagram
+- Calendar to book a session with the times available, that updates once booked. (webix?)
