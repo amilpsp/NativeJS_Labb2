@@ -96,10 +96,18 @@ h1:not(#hero-h1) {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  border-style: solid;
+  /* border-style: solid;
   border-radius: 0.2em;
   border-width: 1px;
-  border-color: rgba(245, 245, 245, 0.301);
+  border-color: rgba(245, 245, 245, 0.301); 
+  background-color: rgba(245, 245, 245, 0.301);*/
+  background: rgb(200, 201, 203);
+  background: linear-gradient(
+    90deg,
+    rgba(200, 201, 203, 0.35) 0%,
+    rgba(245, 245, 245, 0) 50%,
+    rgba(200, 201, 203, 0.35) 100%
+  );
 }
 /* adaptive photo layout */
 .photo-layout {
