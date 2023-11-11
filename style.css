@@ -215,10 +215,26 @@ footer img:hover {
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
+#icon-container {
+  margin-bottom: 1em;
+}
 #footer-container {
   display: flex;
   flex-direction: row;
 }
+
+#icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 1.2em;
+  filter: invert(100%);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Code has been validated through the W3C validation VSCode extention */
+
 #contact-container {
   padding: 0 1em;
 }
@@ -241,15 +257,3 @@ footer img:hover {
   background: url(img/icons/icons8-location-50.png) no-repeat;
   background-size: 1.2em;
 }
-
-#icon-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-right: 1.2em;
-  filter: invert(100%);
-  align-items: center;
-  justify-content: center;
-}
-
-/* Code has been validated through the W3C validation VSCode extention */
