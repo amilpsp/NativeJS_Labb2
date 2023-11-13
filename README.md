@@ -3,16 +3,14 @@
 Fictional website made for class!
 Lost access to the old CSS&HTML school project repo, building uppon that for the next lab
 
-## Project instructions (summarized in Svengelska for now):
+## Project instructions (summarized in Svengelska):
 
 ### KRAV FÖR G
 
 1. Webbtjänst och Data:
-
    - **Hämta JSON-data**.
    - Hämta och visa minst tio värden från den valda webbtjänsten.
    - Meningsfull och användbar data.
-
 2. Webbplats Layout:
    - **Två sidor**, med navigationslänkar
 3. **Dynamisk Uppdatering.**
@@ -33,14 +31,3 @@ Lost access to the old CSS&HTML school project repo, building uppon that for the
 2. Web Storage
 3. Datavisualiseringsbibliotek
 4. Enhetsformaterad Kod (din JavaScript är enhetligt formaterad och följer kodningsstandarder)
-
-## Action plan:
-
-1. Fix the layout first. No listeners.
-2. Most basic listeners ("read more" buttons, individual picture preview)
-
-## Brain dump:
-
-- GET the pictures, instead of having them on the HTML
-- Displaying the pictures from my actual instagram
-- Calendar to book a session with the times available, that updates once booked. (webix?)
