@@ -1,75 +1,55 @@
 {
-    "photo-layout-images":
-    [
+    "photo-layout-images":[
         {
-        "image1":
-        {
-                "src":"img/compressed_skyscrapers-1893201_1920.jpg",
+            "id":"1",    
+            "src":"img/compressed_skyscrapers-1893201_1920.jpg",
                 "alt":"skyscrapers"
-            }
+        }, 
+        {
+            "id":"2",
+            "src":"img/compressed_windows_architecture-2256489_1920.jpg",
+            "alt":"wiew of building's windows from straight down"
         },
         {
-        "image2":
+            "id":"3",
+            "src":"img/compressed_architecture-1868667_1920.jpg",
+            "alt":"drone view of a city at night"
+        },   
         {
-                "src":"img/compressed_windows_architecture-2256489_1920.jpg",
-                "alt":"wiew of building's windows from straight down"
-            }
+            "id":"4",
+            "src":"img/compressed_porsche-1851246_1920.jpg",
+            "alt":"porsche at night"
+        
         },
         {
-        "image3":
-        {
-                "src":"img/compressed_architecture-1868667_1920.jpg",
-                "alt":"drone view of a city at night"
-            }
+            "id":"5",
+            "src":"img/compressed_arcos_architecture-3357028_1920.jpg",
+            "alt":"arched hallway"
         },
         {
-        "image4":
-        {
-                "src":"img/compressed_porsche-1851246_1920.jpg",
-                "alt":"porsche at night"
-            }
+            "id":"6",
+            "src":"img/compressed_escalator-769790_1920.jpg",
+            "alt":"escalator"
         },
         {
-        "image5":
-        {
-                "src":"img/compressed_arcos_architecture-3357028_1920.jpg",
-                "alt":"arched hallway"
-            }
+            "id":"7",
+            "src":"img/compressed_architecture-22039_1920.jpg",
+            "alt":"building windows"
         },
         {
-        "image6":
-        {
-                "src":"img/compressed_escalator-769790_1920.jpg",
-                "alt":"escalator"
-            }
+            "id":"8",
+            "src":"img/compressed_buildings-1836478_1920.jpg",
+            "alt":"brick facade and the entrance of a caffee"
         },
         {
-        "image7":
-        {
-                "src":"img/compressed_architecture-22039_1920.jpg",
-                "alt":"building windows"
-            }
+            "id":"9",
+            "src":"img/compressed_abstract-1138967_1920.jpg",
+            "alt":"curved modern building facade, made of glass"
         },
         {
-        "image8":
-        {
-                "src":"img/compressed_buildings-1836478_1920.jpg",
-                "alt":"brick facade and the entrance of a caffee"
-            }
-        },
-        {
-        "image9":
-        {
-                "src":"img/compressed_abstract-1138967_1920.jpg",
-                "alt":"curved modern building facade, made of glass"
-            }
-        },
-        {
-        "image10":
-        {
-                "src":"img/compressed_prague-3540883_1920.jpg",
-                "alt":"pedestrians in prague"
-            }
+            "id":"10",
+            "src":"img/compressed_prague-3540883_1920.jpg",
+            "alt":"pedestrians in prague"
         }
     ]
 }
