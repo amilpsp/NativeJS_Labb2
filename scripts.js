@@ -2,12 +2,12 @@
 
 let layoutUl = document.getElementsByClassName("photo-layout");
 
-let promise = fetch('https://my-json-server.typicode.com/amilpsp/NativeJS_Labb2/db/', {
+let promise = fetch('http://localhost:3000/photo-layout-images', {
         headers: {
+          'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/index.html',
           'Content-Type': 'application/json'
         },
         method: 'GET',
-        mode: 'no-cors'
 })
 
 promise
