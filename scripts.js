@@ -1,9 +1,11 @@
-/* accdss the photo-layout ul, then for each item in the json file, create a li and innerhtml the info in the JSON into it */
+/* accessing the photo-layout ul, then itterating through and creating a li and inner-HTMLing the info in the JSON into it */
 
 fetch("http://localhost:3000/photo-layout-images")
   .then(res=>res.json())
   .then(json=> {
-    json.map(data=>{
+    json.map(data=>{ 
+        /* .map() built-in function itterates through the objects in the json */
+        
         newPicture(data.src, data.alt)
     })
   });
