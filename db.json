@@ -4,61 +4,61 @@
             "id":"1",    
             "src":"img/compressed_skyscrapers-1893201_1920.jpg",
                 "alt":"skyscrapers",
-            "srcHD": "skyscrapers-1893201_1920.jpg"
+            "srcHD": "img/originals/skyscrapers-1893201_1920.jpg"
         }, 
         {
             "id":"2",
             "src":"img/compressed_windows_architecture-2256489_1920.jpg",
             "alt":"wiew of building's windows from straight down",
-            "srcHD": "windows_architecture-2256489_1920.jpg"
+            "srcHD": "img/originals/architecture-2256489_1920.jpg"
         },
         {
             "id":"3",
             "src":"img/compressed_architecture-1868667_1920.jpg",
             "alt":"drone view of a city at night",
-            "srcHD": "architecture-1868667_1920.jpg"
+            "srcHD": "img/originals/architecture-1868667_1920.jpg"
         },   
         {
             "id":"4",
             "src":"img/compressed_porsche-1851246_1920.jpg",
             "alt":"porsche at night",
-            "srcHD": "porsche-1851246_1920.jpg"        
+            "srcHD": "img/originals/porsche-1851246_1920.jpg"        
         },
         {
             "id":"5",
             "src":"img/compressed_arcos_architecture-3357028_1920.jpg",
             "alt":"arched hallway",
-            "srcHD": "arcos_architecture-3357028_1920.jpg"
+            "srcHD": "img/originals/architecture-3357028_1920.jpg"
         },
         {
             "id":"6",
             "src":"img/compressed_escalator-769790_1920.jpg",
             "alt":"escalator",
-            "srcHD": "escalator-769790_1920.jpg"
+            "srcHD": "img/originals/escalator-769790_1920.jpg"
         },
         {
             "id":"7",
             "src":"img/compressed_architecture-22039_1920.jpg",
             "alt":"building windows",
-            "srcHD": "architecture-22039_1920.jpg"
+            "srcHD": "img/originals/architecture-22039_1920.jpg"
         },
         {
             "id":"8",
             "src":"img/compressed_buildings-1836478_1920.jpg",
             "alt":"brick facade and the entrance of a caffee",
-            "srcHD": "buildings-1836478_1920.jpg"
+            "srcHD": "img/originals/buildings-1836478_1920.jpg"
         },
         {
             "id":"9",
             "src":"img/compressed_abstract-1138967_1920.jpg",
             "alt":"curved modern building facade, made of glass",
-            "srcHD": "abstract-1138967_1920.jpg"
+            "srcHD": "img/originals/abstract-1138967_1920.jpg"
         },
         {
             "id":"10",
             "src":"img/compressed_prague-3540883_1920.jpg",
             "alt":"pedestrians in prague",
-            "srcHD": "prague-3540883_1920.jpg"
+            "srcHD": "img/originals/prague-3540883_1920.jpg"
         }
     ]
 }
