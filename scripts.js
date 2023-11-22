@@ -19,7 +19,9 @@ function newPicture (src, alt, srcHD){
 
     newLi.appendChild(newTextNode)
     layoutUl.appendChild(newLi)
-    newModal(srcHD, alt) /* making a new modal for each picture created 
+    newModal(srcHD, alt) 
+    
+    /* BUGGED making a new modal for each picture created 
     
     calling it directly from here because their creation depends on this
 
@@ -35,11 +37,7 @@ function newModal (srcHD,alt){
     newDiv.innerHTML=`
 <div   
 class="photo-modal modal fade"
-id="exampleModal1"
-tabindex="-1"
-aria-labelledby="exampleModal1Label"
-aria-hidden="true"
->
+id="exampleModal1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="ratio ratio-16x9">
@@ -48,11 +46,10 @@ aria-hidden="true"
                 alt="${alt}"
                 allowfullscreen
                 ></img>
-            </div>/* end of ratio */
-        </div>/* end of modal-content */
-    </div> /* end of modal-dialog */
-</div>/* end of modal */
-    `
+            </div> <!-- end of ratio -->
+        </div> <!-- end of modal-content -->
+    </div> <!-- end of modal-dialog -->
+</div> <!-- end of modal -->`
     newDiv.appendChild(newTextNode)
     layoutModals.appendChild(newDiv)
 }
