@@ -79,6 +79,11 @@ main {
 .card {
   margin-bottom: 1em;
 }
+.read-more {
+  display: none;
+}
+/* EVENT LISTENER PARAGRAPH VISIBILITY */
+
 #about:last-child {
   margin-bottom: 0;
 }

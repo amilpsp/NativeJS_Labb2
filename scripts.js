@@ -11,7 +11,7 @@ fetch("http://localhost:3000/photo-layout-images")
   });
 
   /* creating a new li, putting the image in it, and appending it to the list */
-function newPicture (src, alt, srcHD){
+function newPicture (src, alt){
     let layoutUl = document.getElementById('photo-layout')
     let newLi = document.createElement('li')
     let newTextNode = document.createTextNode('')
@@ -20,3 +20,24 @@ function newPicture (src, alt, srcHD){
     newLi.appendChild(newTextNode)
     layoutUl.appendChild(newLi)
 }
+
+/* Learned how to itterate through a NodeList, syntax was tricky. I can now have unlimited "read-more-btn" */
+addEventListener('DOMContentLoaded', () => {
+    function onClick(button, paragraph){
+        button.innerHTML="Read Less"
+        paragraph.display = "inline"
+        /* I'm having the same damn problem I was having with the modals: I'M FAILING AT CHANGING THE DAMN DISPLAY*/
+        console.log(paragraph)
+    }
+
+    let buttons = document.querySelectorAll('.read-more-btn')
+    
+    
+    
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          onClick(button, button.previousSibling);
+        });
+      });
+    }
+  )
