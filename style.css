@@ -109,7 +109,7 @@ h1:not(#hero-h1) {
     rgba(200, 201, 203, 0.35) 100%
   );
 }
-/* adaptive photo layout */
+/* adaptive photo layout from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
 .photo-layout {
   list-style-type: none;
   display: flex;
