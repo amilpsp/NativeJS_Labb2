@@ -257,3 +257,7 @@ footer img:hover {
   background: url(img/icons/icons8-location-50.png) no-repeat;
   background-size: 1.2em;
 }
+
+.modals {
+  display: none;
+}
