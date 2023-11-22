@@ -6,23 +6,29 @@ fetch("http://localhost:3000/photo-layout-images")
     json.map(data=>{ 
         /* .map() built-in function itterates through the objects in the json */
         
-        newPicture(data.src, data.alt)
+        newPicture(data.src, data.alt, data.srcHD)
     })
   });
 
   /* creating a new li, putting the image in it, and appending it to the list */
-function newPicture (src, alt){
+function newPicture (src, alt, srcHD){
     let layoutUl = document.getElementById('photo-layout')
     let newLi = document.createElement('li')
     let newTextNode = document.createTextNode('')
-    newLi.innerHTML=`<img src="${src}" alt="${alt}">`
+    newLi.innerHTML=`<img class="layout-img" src="${src}" alt="${alt}">`
+
     newLi.appendChild(newTextNode)
     layoutUl.appendChild(newLi)
-    newModal(src, alt) /* making a new modal for each picture created */
+    newModal(srcHD, alt) /* making a new modal for each picture created 
+    
+    calling it directly from here because their creation depends on this
+
+    [ominously religious phrasing aside]
+    
+    */
 }
 
-
-function newModal (src,alt){
+function newModal (srcHD,alt){
     let layoutModals = document.getElementById('modals-container')
     let newDiv = document.createElement('div')
     let newTextNode = document.createTextNode('')
@@ -38,7 +44,7 @@ aria-hidden="true"
         <div class="modal-content">
             <div class="ratio ratio-16x9">
                 <img
-                src="${src}"
+                src="${srcHD}"
                 alt="${alt}"
                 allowfullscreen
                 ></img>
@@ -50,3 +56,14 @@ aria-hidden="true"
     newDiv.appendChild(newTextNode)
     layoutModals.appendChild(newDiv)
 }
+
+/* event listener for the modal display */
+addEventListener('DOMContentLoaded', () => {
+    function displayModal(e){
+        e.style.display="float"
+    }
+    
+    let layoutImages = document.querySelectorAll('.layout-img')
+    layoutImages.addEventListener('click',displayModal(this))
+    }
+)
