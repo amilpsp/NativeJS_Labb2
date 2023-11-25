@@ -25,6 +25,30 @@ body {
   flex-wrap: wrap;
   /* change this in desktop */
 }
+#data-consent {
+  display: block;
+  position: fixed;
+  background-color: #212529;
+  z-index: 5;
+  margin: 15% 25%;
+  padding: 3em;
+  border-radius: 0.7em;
+}
+@media screen and (max-width: 670px) {
+  #data-consent {
+    margin: 40% 5%;
+    padding: 1em;
+  }
+}
+#modalBackground {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.836);
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+  backdrop-filter: blur(6px);
+}
 main {
   flex-wrap: wrap;
   justify-content: center;
