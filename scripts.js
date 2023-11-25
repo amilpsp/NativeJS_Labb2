@@ -25,7 +25,7 @@ function newPicture (src, alt){
 addEventListener('DOMContentLoaded', () => {
     function onClick(button, paragraph){
         button.innerHTML="Read Less"
-        paragraph.display = "inline" /* !!!!!!!!!!!!!!!!!!!!!! */
+        paragraph.classList.remove('hidden') /* !!!!!!!!!!!!!!!!!!!!!! */
         /* I'm having the same damn problem I was having with the modals: I'M FAILING AT CHANGING THE DAMN DISPLAY*/
         console.log(paragraph)
     }
@@ -36,7 +36,7 @@ addEventListener('DOMContentLoaded', () => {
     
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-          onClick(button, button.previousSibling);
+          onClick(button, button.previousSibling.previousSibling);
         });
       });
     }
