@@ -23,21 +23,26 @@ function newPicture (src, alt){
 
 /* Learned how to itterate through a NodeList, syntax was tricky. I can now have unlimited "read-more-btn" */
 addEventListener('DOMContentLoaded', () => {
-    function onClick(button, paragraph){
-        button.innerHTML="Read Less"
-        paragraph.classList.remove('hidden') /* !!!!!!!!!!!!!!!!!!!!!! */
-        /* I'm having the same damn problem I was having with the modals: I'M FAILING AT CHANGING THE DAMN DISPLAY*/
-        console.log(paragraph)
-    }
+  
+  let buttons = document.querySelectorAll('.card-read-more-btn')
 
-    let buttons = document.querySelectorAll('.read-more-btn')
-    
-    
+    function onClick(button, paragraph){
+        if (button.innerHTML=="Read more"){
+          button.innerHTML="Read Less"
+          paragraph.classList.remove('hidden') 
+        }
+        else{
+          button.innerHTML="Read more"
+          paragraph.classList.add('hidden')
+        }
+    }
     
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-          onClick(button, button.previousSibling.previousSibling);
+          onClick(button, button.previousSibling.previousSibling); /* I thought it'd be the sibling direcly up, but it's not. I have to look into the node-layout rules */
         });
       });
     }
   )
+
+  

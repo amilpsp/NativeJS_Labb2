@@ -17,6 +17,7 @@
   --tablet-vw: ;
   --desktop-vw: 800px;
 }
+
 body {
   overflow-x: hidden;
   display: flex;
