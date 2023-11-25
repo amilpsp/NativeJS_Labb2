@@ -79,7 +79,7 @@ main {
 .card {
   margin-bottom: 1em;
 }
-.read-more {
+.hidden {
   display: none;
 }
 /* EVENT LISTENER PARAGRAPH VISIBILITY */
