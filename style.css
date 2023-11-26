@@ -40,7 +40,7 @@ body {
     padding: 1em;
   }
 }
-#modalBackground {
+#modal-background {
   display: block;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.836);
@@ -49,6 +49,9 @@ body {
   z-index: 4;
   backdrop-filter: blur(6px);
 }
+
+/* !!! ADD CONSENT BUTTON STYLE LATER !!!*/
+
 main {
   flex-wrap: wrap;
   justify-content: center;
@@ -105,7 +108,7 @@ main {
   margin-bottom: 1em;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 /* EVENT LISTENER PARAGRAPH VISIBILITY */
 

@@ -5,8 +5,7 @@ fetch("http://localhost:3000/photo-layout-images")
   .then(json=> {
     json.map(data=>{ 
         /* .map() built-in function itterates through the objects in the json */
-        
-        newPicture(data.src, data.alt, data.srcHD)
+        newPicture(data.src, data.alt)
     })
   });
 
@@ -24,25 +23,58 @@ function newPicture (src, alt){
 /* Learned how to itterate through a NodeList, syntax was tricky. I can now have unlimited "read-more-btn" */
 addEventListener('DOMContentLoaded', () => {
   
-  let buttons = document.querySelectorAll('.card-read-more-btn')
+  let readMoreButtons = document.querySelectorAll('.card-read-more-btn')
 
     function onClick(button, paragraph){
+      paragraph.classList.toggle('hidden')
         if (button.innerHTML=="Read more"){
           button.innerHTML="Read Less"
-          paragraph.classList.remove('hidden') 
         }
         else{
           button.innerHTML="Read more"
-          paragraph.classList.add('hidden')
         }
-    }
+    }/* end of on Click */
     
-    buttons.forEach((button) => {
+    readMoreButtons.forEach((button) => {
         button.addEventListener('click', () => {
           onClick(button, button.previousSibling.previousSibling); /* I thought it'd be the sibling direcly up, but it's not. I have to look into the node-layout rules */
         });
-      });
+      });/* end of forEach */
     }
-  )
+  ) /* end of DOMContentLoaded */
 
+addEventListener('DOMContentLoaded',() =>{
   
+  let consentButtons = document.querySelectorAll('.consent-btn')
+  let consentModal = document.querySelector('#data-consent')
+  let modalBackground = document.querySelector('#modal-background')
+
+  /* if the choice hasn't been stored, display the choice modal */
+  if (localStorage.getItem('choice') == null || localStorage.getItem('choice') == undefined){
+    displayModal()
+    cookiesChoice()
+  }
+  /* creates event listeners for each of the buttons, calls the storing function, and hides the modal */
+  function cookiesChoice(){
+    consentButtons.forEach((button)=>{
+      button.addEventListener('click', () => {
+        storeCookieChoice(button)
+        hideModal()
+      })
+    })
+  }
+  /* storing the choice */
+  function storeCookieChoice (button){
+    localStorage.setItem('choice', `${button}`)
+  }
+  function hideModal(){
+    consentModal.classList.add('hidden')
+    modalBackground.classList.add('hidden')
+  }
+  function displayModal(){
+    consentModal.classList.remove('hidden')
+    modalBackground.classList.remove('hidden')
+  }
+})
+
+/* learned that for the .classList.add() function to work there has to be an existing class list, even if it's empty. Otherwise I won't get any errors, but it won't work. */
